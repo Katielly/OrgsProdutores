@@ -25,7 +25,7 @@ class Topo extends React.Component {
         return <View style={estilos.topo}>
             <Image style={estilos.imagem} source={logo} />
             <Text style={estilos.boasVinda}> { this.state.topo.boasVindas } </Text>
-            <Text style={estilos.leganda}> { this.state.topo.legenda } </Text>
+            <Text style={estilos.legenda}> { this.state.topo.legenda } </Text>
         </View>
     }
 }
@@ -43,11 +43,13 @@ const estilos = StyleSheet.create({
         marginTop: 24,
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: 'bold'
+        fontWeight: 'bold',
+        color: '#464646',
     },
-    leganda: {
+    legenda: {
         fontSize: 16,
-        lineHeight: 26
+        lineHeight: 26,
+        color : '#a3a3a3',
     }
 });
 
